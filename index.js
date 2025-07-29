@@ -437,8 +437,8 @@ async function StartZenn() {
 rl.question(`Silahkan Masukin Nomer Kamu\nNomer Yang Kamu Masukkin : `, async (phoneNumber) => {
   rl.close();
   const cleanNumber = phoneNumber.trim();
-  const code = await sock.requestPairingCode(cleanNumber, "ZALLLLLL");
-  console.log(`Kode Pairing Kamu: ZALL - LLLL`);
+  const code = await sock.requestPairingCode(cleanNumber, "HERROFFC");
+  console.log(`Kode Pairing Kamu: HERR - OFFC`);
 });
   sock.ev.on("connection.update", async (update) => {
     const { connection, lastDisconnect } = update;
@@ -466,8 +466,8 @@ rl.question(`Silahkan Masukin Nomer Kamu\nNomer Yang Kamu Masukkin : `, async (p
 ⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈    
 
 ┌─⊱「 𝐂𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐨𝐧 𝐓𝐨 𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩 」⊰─┐
-├➣ Name : The End Invictus
-├➣ Developer : @ZalOffc
+├➣ Name : VillainCrasher
+├➣ Developer : @HerrOfficial
 ├➣ Version : 1.0
 └───────────────────────────────┘`));
     }
@@ -481,7 +481,7 @@ rl.question(`Silahkan Masukin Nomer Kamu\nNomer Yang Kamu Masukkin : `, async (p
   let jid = "";
   try {
     console.log(chalk.blue.bold(`
-┌─☉「 𝐓𝐇𝐄 𝐄𝐍𝐃 𝐈𝐍𝐕𝐈𝐂𝐓𝐔𝐒 」☉─┐
+┌─☉「 VillainCrasher 」☉─┐
 ├▢ Username : ${user} 
 ├▢ Mengirim Bug Ke : ${target}
 ├▢ Type Bug: ${mode}
