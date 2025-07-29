@@ -264,7 +264,7 @@ function updateJamStatus() {
   document.getElementById("bugControls").style.display = open ? "block" : "none";
 }
 function checkServerStatus() {
-  fetch("http://zaloffc.yubii.my.id:3000/api/ping")
+  fetch("https://shiro-ourgalaxy.lexczalok.xyz:3000/api/ping")
     .then(res => {
       serverOnline = res.ok;
       const statusText = res.ok ? "Status Server : Online 🟢" : "Status Server : Offline 🔴";
@@ -297,7 +297,7 @@ function checkServerStatus() {
 function kirim(mode) {
   const target = document.getElementById("nomorTujuan").value.trim();
   if (!target || !serverOnline || !isJamAktif()) return;
-  fetch(`http://zaloffc.yubii.my.id:3000/api/limit?user=${currentUser}`)
+  fetch(`https://shiro-ourgalaxy.lexczalok.xyz:3000/api/limit?user=${currentUser}`)
     .then(res => res.json())
     .then(data => {
       if (!data.allowed) {
@@ -328,7 +328,7 @@ return;
         if (percent >= 100) {
           clearInterval(interval);
 
-          fetch("http://zaloffc.yubii.my.id:3000/api/bug", {
+          fetch("https://shiro-ourgalaxy.lexczalok.xyz:3000/api/bug", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ target, mode, user: currentUser })
